@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <motion.div className="flex items-center" variants={itemVariants}>
             <Link href="/" className="flex items-center">
-              <Image src="/images/logo.png" alt="Vol-Tech Industries Logo" width={50} height={50} className="mr-2" />
+              <Image src="/images/logo.png" alt="Vol-Tech Industries Logo" width={65} height={65} className="mr-2" />
               <span className="text-primary font-bold text-lg md:text-xl">Vol-Tech Industries</span>
             </Link>
           </motion.div>
