@@ -4,6 +4,7 @@ import AnimatedSection from "@/components/animated-section"
 import AnimatedCounter from "@/components/animated-counter"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { generateBreadcrumbSchema } from "@/lib/seo-config"
 
 export default function AboutPageClient() {
   const clients = [

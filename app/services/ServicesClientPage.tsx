@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import AnimatedSection from "@/components/animated-section"
 import { Settings, Zap, PenToolIcon as Tool, RefreshCw, Cable, Thermometer } from "lucide-react"
+import { generateBreadcrumbSchema, generateServiceSchema } from "@/lib/seo-config"
 
 export default function ServicesClientPage() {
   const services = [
