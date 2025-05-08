@@ -121,8 +121,8 @@ export default function ContactPageClient() {
             <AnimatedSection direction="left">
               <h2 className="section-heading">Get In Touch</h2>
               <p className="text-gray-700 mb-8">
-                Have questions about our products or services? Fill out the form and our team will get back to you as
-                soon as possible.
+                Have questions about our products or services? Fill out the form
+                and our team will get back to you as soon as possible.
               </p>
 
               <motion.form
@@ -134,7 +134,10 @@ export default function ContactPageClient() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <motion.div variants={itemVariants}>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
                       Your Name
                     </label>
                     <input
@@ -149,7 +152,10 @@ export default function ContactPageClient() {
                     />
                   </motion.div>
                   <motion.div variants={itemVariants}>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-1"
+                    >
                       Email Address
                     </label>
                     <input
@@ -165,7 +171,10 @@ export default function ContactPageClient() {
                   </motion.div>
                 </div>
                 <motion.div variants={itemVariants}>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -180,7 +189,10 @@ export default function ContactPageClient() {
                   />
                 </motion.div>
                 <motion.div variants={itemVariants}>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Subject
                   </label>
                   <input
@@ -195,7 +207,10 @@ export default function ContactPageClient() {
                   />
                 </motion.div>
                 <motion.div variants={itemVariants}>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Message
                   </label>
                   <textarea
@@ -217,7 +232,8 @@ export default function ContactPageClient() {
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="h-5 w-5 mr-2 animate-spin" /> Sending...
+                        <Loader2 className="h-5 w-5 mr-2 animate-spin" />{" "}
+                        Sending...
                       </>
                     ) : (
                       <>
@@ -231,7 +247,9 @@ export default function ContactPageClient() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className={`p-4 rounded-md ${
-                      submitResult.success ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+                      submitResult.success
+                        ? "bg-green-100 text-green-800"
+                        : "bg-red-100 text-red-800"
                     }`}
                   >
                     {submitResult.message}
@@ -253,7 +271,9 @@ export default function ContactPageClient() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary-dark mb-2">Phone</h3>
+                    <h3 className="text-lg font-semibold text-primary-dark mb-2">
+                      Phone
+                    </h3>
                     <div className="mb-4">
                       <p className="font-medium">For Marketing:</p>
                       <p className="text-gray-700">Mr. Ghanshyam Patel</p>
@@ -280,9 +300,13 @@ export default function ContactPageClient() {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary-dark mb-2">Email</h3>
+                    <h3 className="text-lg font-semibold text-primary-dark mb-2">
+                      Email
+                    </h3>
                     <p className="text-gray-700">info@voltechtransformer.com</p>
-                    <p className="text-gray-700">transformer@voltechtransformer.com</p>
+                    <p className="text-gray-700">
+                      transformer@voltechtransformer.com
+                    </p>
                     <p className="text-gray-700">voltech2004@yahoo.co.in</p>
                     <p className="text-gray-700">sale@voltechtransformer.com</p>
                   </div>
@@ -298,7 +322,9 @@ export default function ContactPageClient() {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary-dark mb-2">Location</h3>
+                    <h3 className="text-lg font-semibold text-primary-dark mb-2">
+                      Location
+                    </h3>
                     <p className="text-gray-700">
                       878/12 SAHJANAND RICE MILL COMPOUND,
                       <br />
@@ -323,16 +349,23 @@ export default function ContactPageClient() {
       </section>
 
       <motion.div
-        className="h-[400px] w-full bg-gray-200"
+        className="w-full bg-gray-200"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
       >
-        {/* Google Maps iframe would go here */}
-        <div className="w-full h-full flex items-center justify-center bg-gray-300">
-          <p className="text-gray-600">Google Maps Embed</p>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.8881703479772!2d73.21963124548748!3d22.294928350218925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc585a5338945%3A0x40ee10b8827be44a!2sVoltech%20Transformer!5e0!3m2!1sen!2sin!4v1746695000722!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Vol-Tech Transformer Location"
+          className="w-full"
+        ></iframe>
       </motion.div>
     </>
-  )
+  );
 }
